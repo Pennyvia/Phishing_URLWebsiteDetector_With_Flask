@@ -1,0 +1,46 @@
+/* index.css */
+body {
+    background-color:  #add8e6;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+@keyframes moveFade {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+h2 {
+    color: #9c0000;
+    margin-bottom: 20px;
+    animation: moveFade 30s linear infinite;
+}
+
+p {
+    color: black;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}

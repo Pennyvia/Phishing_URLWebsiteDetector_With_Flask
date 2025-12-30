@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f5f5f5; /* light gray background */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff; /* white background */
+            border: 1px solid #ddd; /* light gray border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333; /* dark gray text */
+        }
+
+        .lead {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333; /* dark gray text */
+        }
+
+        .btn-secondary {
+            background-color: #337ab7; /* blue button */
+            color: #fff; /* white text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            background-color: #23527c; /* darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Prediction Result</h1>
+        {% if prediction %}
+            <p class="lead text-center">The entered URL is: <strong>{{ prediction }}</strong></p>
+        {% elif error %}
+            <p class="lead text-center text-danger">{{ error }}</p>
+        {% endif %}
+        <div class="text-center">
+            <a href="/" class="btn btn-secondary">Try another URL</a>
+        </div>
+    </div>
+</body>
+</html>

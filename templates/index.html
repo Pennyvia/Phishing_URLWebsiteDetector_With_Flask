@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHISHING URL PREDICTION</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Add index css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">.
+
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Your Personal Guardian Against Phishing</h2>
+        <p>Since the dawn of the digital age, the internet has been a double-edged sword. On one hand, it has revolutionized our world, bringing countless benefits. On the other hand, it has opened up new avenues for fraud, with <strong>Phishing</strong> leading the charge.</p>
+
+        <p>First reported in 1990, Phishing has evolved from a simple scam into a sophisticated vector of attack. It's now considered one of the most prevalent forms of online fraud, causing significant harm to unsuspecting internet users every day.</p>
+
+        <p>But fear not! This platform is your shield against such threats. My mission is to help you navigate the internet safely, without falling into the traps set by phishing attacks. I provide you with the tools to verify the authenticity of any website you're suspicious of.</p>
+        <p>Together, we can make the internet a safer place. Let's start the journey!</p>
+        <h1 class="text-center">Enter a URL To see if it safe</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="url" placeholder="Enter URL" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+    <div class="container">
+        <a href="https://www.statista.com/statistics/266155/number-of-phishing-domain-names-worldwide/" rel="nofollow">
+            <img src="https://www.statista.com/graphic/1/266155/number-of-phishing-domain-names-worldwide.jpg" alt="Statistic: Number of unique phishing sites detected worldwide from 3rd quarter 2013 to 1st quarter 2024 | Statista" style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"/>
+        </a>
+
+
+        Find more statistics at <a href="https://www.statista.com" rel="nofollow">Statista</a>
+    </div>
+</body>
+</html>

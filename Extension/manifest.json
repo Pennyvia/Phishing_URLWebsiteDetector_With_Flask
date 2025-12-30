@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "PhishGuard",
+    "version": "1.0",
+    "description": "A Chrome extension for Guarding against phishing using lexical features, host based features",
+    "permissions": [
+    "activeTab"
+  ],
+    "host_permissions": [
+    "https://localhost:5000/*"
+        ],
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "PhishGuard",
+        "default_icon": "icon.png"
+    }
+}
